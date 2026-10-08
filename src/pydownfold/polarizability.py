@@ -73,7 +73,7 @@ def polarization_weights(
 
     weights = (
         1.0 / (omega - transition_energies + 1j * eta)
-        - 1.0 / (omega + transition_energies - 1j * eta)
+        - 1.0 / (omega + transition_energies + 1j * eta)
     )
 
     if closed_shell:
